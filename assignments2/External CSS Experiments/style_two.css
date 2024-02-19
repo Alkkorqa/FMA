@@ -1,0 +1,28 @@
+h1 {
+    width: 320px;
+    border: 2px solid #b3b3b3;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+    box-shadow: 2px 2px 15px 2px rgb(1, 179, 255);
+    margin-bottom: 20px;
+    color: rgb(226, 43, 43);
+}
+
+h2{
+    float: left;
+    color: black;
+    background-color: white;
+    border:2px dotted black ;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 15px 2px rgba(1, 179, 255);
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+p{
+    color: red;
+    text-align: left;
+}
