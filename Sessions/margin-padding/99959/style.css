@@ -4,10 +4,10 @@ nav {
     box-shadow: 0px 3px 7px 5px #5d5d5d;
 }
 
-body,
-ul {
+body ul {
     padding: 0px;
     margin: 0px;
+    font-family:sans-serif ;
    
 
 }
@@ -27,8 +27,7 @@ li a {
     color: white;
 }
 
-li a :hover{
-    
+li a:hover{  
     background-color: black ;
     transition: 1s;
 }
@@ -36,7 +35,7 @@ li a :hover{
 
 
 nav ul {
-    width: 456px;
+    width: 500px;
     margin: 0px auto;
 
 }
@@ -44,6 +43,333 @@ nav ul {
 .a{
   background-color: black;
 }
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.p30{
+    padding: 30px;
+}
+
+main{
+    width: 1150px;
+    margin: 20px auto;
+}
+
+.fig1{
+    float: left;
+}
+
+.mt30{
+    margin-top: 30px;
+}
+
+.pt40{
+    padding-top: 40px;
+}
+
+h4{
+    color: rgb(255, 82, 114);
+}  
+
+h2{
+    font-size: 35px;
+    font-weight:normal;
+}
+
+.sec2{
+    width: 1160px;
+}
+
+img{
+    transition: 1s;
+}
+
+
+img:hover{
+    border-radius: 50%;
+    transition: 1s;
+}
+
+
+
+
+
+.fig2{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
