@@ -1,0 +1,19 @@
+
+nav{
+    width: 600px;
+    height: 100vh;
+    padding-top:100px;
+    background-color:azure;
+}
+
+nav a{
+    margin-bottom: 20px;
+    display: block;
+    padding: 40px;
+    border: 1px solid red;
+}
+
+.myProduct{
+
+    background-color: aqua;
+}
