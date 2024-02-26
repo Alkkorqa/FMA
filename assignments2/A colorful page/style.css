@@ -53,3 +53,26 @@ body {
     background-repeat: no-repeat;
     background-size:1920px 1080px;
 }
+
+section{
+    color: white;
+    text-align: center;
+    float: left;
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
+
+.aqua{
+    color:aqua;
+}
+
+.yellow{
+    color: yellow;
+}
+
+p{
+   font: italic; 
+}
