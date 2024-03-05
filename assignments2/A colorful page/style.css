@@ -51,7 +51,7 @@ nav ul {
 body {
     background-image: url(/Projects/images/aaaaaaaaa.jpg);
     background-repeat: no-repeat;
-    background-size:1920px 1080px;
+    background-size: cover;
 }
 
 section{
