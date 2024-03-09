@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    height: 25vh;
+}
+
+hr{
+    width: 33%;
+    border-color: red;
+    margin-left:500px;
+    margin-top: 35px;
+
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* styling the sections */
+
+section:nth-child(1){
+    background-color: gray;
+    color: white;
+}
+
+section:nth-child(3){
+    background-color: gray;
+    color: white;
+}
+
+
