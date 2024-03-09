@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 200px;
+    gap: 10px;
+}
+
+.global{
+    padding: 40px;
+    background-color: blue;
+}
+
+
+

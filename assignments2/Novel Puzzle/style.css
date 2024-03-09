@@ -1,0 +1,35 @@
+.nW{
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.nL{
+    font-weight: bolder;
+    font-size: 75px;
+}
+
+p:{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p1:first-letter{
+    font-size:170%;
+    float:left;
+    padding-right:10px;
+}
+
+section{
+    width: 750px;
+}
+
+.nw{
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.nl{
+    font-weight: bolder;
+    font-size: 75px;
+}
+
+
