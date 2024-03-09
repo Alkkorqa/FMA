@@ -1,0 +1,43 @@
+/* styling titles */
+
+h1, h2{
+    text-align: center;
+    font-family: cursive;
+}
+
+/* styling p */
+
+p{
+    text-align: center;
+    font-family: cursive;
+    margin-left: 215px;
+    width: 1000px;
+}
+
+/* pseudo classes */
+
+.p1:hover{
+    background-color: black;
+    border-radius: 15px;
+    color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 25px;
+    margin-left: 215px;
+    width: 1000px;
+    transition: 1.5s
+}
+
+.p1:hover::first-letter{
+    font-size:55px;
+    float:left;
+    padding-right:10px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 1.5s;
+}
+
+
+
+
+
+
+
