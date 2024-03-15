@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+body{
+    display: grid;
+    grid-template-rows: 100px  1fr 50px;
+    height: 100vh;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+}
+
+
+header{
+    background-color: red;
+
+}
+
+.card{
+    background-color: grey;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 2rem;
+    background-color: pink;
+}
+
+aside{
+    background-color: green;
+}
+
+footer{
+    background-color: black;
+    color: #ffffff;
+}
+
