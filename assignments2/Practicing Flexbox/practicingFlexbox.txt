@@ -196,4 +196,7 @@ level 24
   display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+align-content: space-between;
 }

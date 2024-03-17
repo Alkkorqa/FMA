@@ -1,7 +1,24 @@
-
-
-div {
+html, body {
+    height: 100%;
+    margin: 0;
+}
+  
+body  div {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    background-color: rgb(231, 137, 153);
 }
+  
+main {
+    text-align: center;
+    border: 3px solid black;
+    padding: 15px;
+    background-color: white;
+}
+
+  
+  
+  
+
