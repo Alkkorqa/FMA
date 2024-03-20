@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-price{
+    width: 150px;
+    padding: 22px 10px 10px 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    border: 3px solid black;
+    width: 343.5px;
+    height: 680px;
+}
+
+.card-1stpart{
+    display: flex; 
+}
+
+.card-date{
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.fs40{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+p{
+    font-family:sans-serif;
+}
+
+.fs30{
+    font-size: 30px;
+}
+
+.m30{
+    margin: 30px;
+}
+
+img{
+    width:340.5px;
+    height: 563px;
+    border: 3px solid black;
+}
+
+
+
+.card-copyright{
+    position: relative;
+    bottom: 540px;
+    left: 30px;
+    color: white;
+    font-family: sans-serif;
+
+    font-weight: 900;
+}
