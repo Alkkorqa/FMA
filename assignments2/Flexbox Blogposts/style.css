@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: sans-serif;
+}
+
+/* styling aside */
+aside {
+    background-color: rgb(70, 86, 109);
+    height: 100vh;
+    width: 300px;
+    text-align: right;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.txt1 {
+    font-size: 40px;
+    font-weight:800 ;
+    color: #ffffff;
+    width: 200px;
+}
+
+a{ 
+    background-color: rgb(70, 86, 109);
+    border: 2.5px solid white;
+    color: white;
+    padding: 10px 17px 10px 17px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.txt2 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #af9e9e;
+    width: 200px;
+}
+
+/* styiling main */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    word-spacing: 3px;
+}
+
+article{
+    width: 900px;
+}
+
+.text2{
+    margin: 15px 0px 0px 0px;
+    color: #5e5e5e;
+}
+
+img{
+    width: 55px;
+    border-radius: 50%;
+}
+
+.df{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cb{
+    color: rgb(0, 108, 223);  
+}
+
+.h1{
+    font-size: 32px;  
+    font-weight: 800; 
+    font-family: sans-serif;
+}
+
+.js{
+    background-color: rgb(255, 60, 60);
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.css{
+    background-color: rgb(54, 190, 54);
+    color: white;
+    padding: 3px 7px 3px 10px;
+    font-size: 15px;
+}
+
+.html{
+    margin: 0 0 0 5px;
+    background-color: rgb(75, 100, 192);
+    color: white;
+    padding: 3px 7px 3px 10px;
+    font-size: 15px;
+}
+
+p{
+    color: #5e5e5e;
+}
+
+h4, hr{
+    color: #af9e9e;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    font-family: sans-serif;
+}
+
+.m30{
+    margin-top: 30px;
+}
+
+/* hover */
+
+a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow:2px 5px 5px 2px #817777;
+    border: 3px solid black;
+    transition: 1s;
+}
+
