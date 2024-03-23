@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+div{
+    height: 1fr;
+}
+
+.div1, .div7{
+    background-color: rgb(228, 142, 156);
+}
+
+.bcg{
+    background-color: rgb(85, 209, 85);
+}
+
+.div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+}
