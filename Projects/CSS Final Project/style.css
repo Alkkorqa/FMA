@@ -1,13 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    -ms-grid-columns: 250px 1fr;
     grid-template-columns: 250px 1fr;
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
 }
 
 .cursor {
@@ -51,14 +58,19 @@ hr {
 /*aside globals */
 
 .displayf {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .spaceb {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .displayg {
+    display: -ms-grid;
     display: grid;
 }
 
@@ -68,11 +80,15 @@ hr {
 }
 
 .asc {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .aic {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .cw {
@@ -118,8 +134,9 @@ hr {
 
 .circle:hover {
     -webkit-box-shadow: 0px 5px 35px -3px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 5px 35px -3px rgba(0, 0, 0, 1);
     box-shadow: 0px 5px 35px -3px rgba(0, 0, 0, 1);
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
 }
 
@@ -130,6 +147,8 @@ hr {
     outline: none;
     padding: 5px;
     width: 200px;
+    -webkit-transition: border-color 0.7s ease-in-out;
+    -o-transition: border-color 0.7s ease-in-out;
     transition: border-color 0.7s ease-in-out;
 }
 
@@ -148,7 +167,9 @@ hr {
 }
 
 .notifications-number {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: red;
     border-radius: 50%;
     width: 15px;
@@ -198,7 +219,8 @@ hr {
     padding: 8px;
     border-radius: 50%;
     background-color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .p10 {
@@ -237,7 +259,8 @@ hr {
     border-radius: 3px;
     position: relative;
     top: -30px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .bcg {
@@ -328,7 +351,9 @@ hr {
 }
 
 .mt-20 {
-    transform: translateY(-25px);
+    -webkit-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+            transform: translateY(-25px);
 }
 
 .position-r {
@@ -366,8 +391,11 @@ header {
 }
 
 .container {
+    -ms-grid-columns: 300px 1fr;
     grid-template-columns: 300px 1fr;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container-child1>hr {
@@ -401,36 +429,71 @@ footer hr {
 }
 
 .four-cards-section {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
+.four-cards-section > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.four-cards-section > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.four-cards-section > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+.four-cards-section > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+
 .manage-listings {
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .cardListing-icon {
     position: absolute;
     bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     pointer-events: auto;
 }
 
 .cardListing {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .card-img {
     width: 100%;
     border-radius: 5px;
     z-index: 9;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
     transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 .cardListing:hover .card-img {
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
     width: 100%;
 }
 
@@ -440,6 +503,8 @@ footer hr {
 
 .rigth-div-footer{
     margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -456,6 +521,7 @@ footer hr {
 @media (max-width:1024px) {
 
     body {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -468,6 +534,8 @@ footer hr {
     }
 
     .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -481,8 +549,25 @@ footer hr {
     }
 
     .manage-listings{
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr; 
+    }
+
+    .manage-listings > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1; 
+    }
+
+    .manage-listings > *:nth-child(2){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1; 
+    }
+
+    .manage-listings > *:nth-child(3){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1; 
     }
 
     .container-child1>hr {
@@ -503,8 +588,30 @@ footer hr {
     }
 
     .four-cards-section{
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .four-cards-section > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .four-cards-section > *:nth-child(2){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .four-cards-section > *:nth-child(3){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .four-cards-section > *:nth-child(4){
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
     }
 
     .left-div-footer{
@@ -520,9 +627,21 @@ footer hr {
     }
 
     .right-div-footer{
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        
+    }
+
+    .right-div-footer > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .right-div-footer > *:nth-child(2){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
     }
 }
