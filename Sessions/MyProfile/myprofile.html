@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+
+<body>
+    <h1 id="header">My Ninja</h1>
+    <div id="avatar">
+        <img src="ninja2.png" alt="" srcset="">
+    </div>
+
+    <p id="bio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae numquam odio rerum, suscipit nulla qui
+        esse officia officiis. Consequuntur in fuga vero accusamus consequatur voluptate voluptates dicta officia nobis
+        corrupti!</p>
+
+        <button onclick="loadNinja2()">NINJA2</button>
+        <button onclick="loadNinja3()">NINJA3</button>
+
+
+    <script>
+
+        function loadNinja2() {
+            const header = document.querySelector('#header');
+            header.textContent = 'My Ninja';
+
+            const avatar = document.querySelector('#avatar');
+            avatar.innerHTML = '<img src="ninja2.png" alt="" srcset="">';
+
+            const bio = document.querySelector('#bio');
+            bio.textContent = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae numquam odio rerum, suscipit nulla';
+        }
+
+        function loadNinja3() {
+            const header = document.querySelector('#header');
+            header.textContent = 'Jerina KORQA';
+
+            const avatar = document.querySelector('#avatar');
+            avatar.innerHTML = '<img src="ninja3.png" alt="" srcset="">';
+
+            const bio = document.querySelector('#bio');
+            bio.textContent = 'Une e kam kryer shkollen emesme me te gjitha pesa sepse une jam vajze e menqur';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Js Challenges</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+        let kilometers = prompt("Enter the number of kilometers:");
+
+
+        kilometers = parseFloat(kilometers);
+
+
+        const conversionFactor = 1.6;
+        const miles = kilometers / conversionFactor;
+
+        const message = isNaN(kilometers)
+            ? "Please enter a valid number."
+            : `${kilometers} kilometers is approximately ${miles.toFixed(2)} miles.`;
+
+        alert(message);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whats My Grade</title>
+</head>
+<body>
+    
+
+    <script>
+        let score = prompt("Please enter your test score (0-100):");
+
+        score = parseFloat(score);
+
+        let grade;
+
+        if (score >= 0 && score <= 19) {
+            grade = 1;
+        }
+
+         else if (score >= 20 && score <= 39) {
+            grade = 2;
+        }
+        
+        else if (score >= 40 && score <= 59) {
+            grade = 3;
+        }
+        
+        else if (score >= 60 && score <= 79) {
+            grade = 4;
+        } 
+        
+        else if (score >= 80 && score <= 100) {
+            grade = 5;
+        }
+        
+        else {
+            grade = "Invalid score";
+        }
+
+        alert("Your grade is: " + grade);
+        
+    </script>
+</body>
+</html>

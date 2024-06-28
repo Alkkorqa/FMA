@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro to Dollars Converter</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let euros = prompt("Please enter the amount in euros:");
+
+        euros = parseFloat(euros);
+
+        const conversionRate = 1.07;
+
+        const dollars = euros * conversionRate;
+
+        alert("The amount in dollars is: " + dollars.toFixed(2));
+    </script>
+</body>
+
+</html>

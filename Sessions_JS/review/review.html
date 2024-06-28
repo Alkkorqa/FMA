@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            padding: 15px;
+            background-color: aqua;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="clickme">Gjilani</h2>
+    <h2 id="prizren">Prizren</h2>
+
+
+
+    <p id="mytext"></p>
+
+    <script>
+        const clickme = document.querySelector('#clickme');
+        const mytext = document.querySelector('#mytext');
+        const prizren = document.querySelector('#prizren');
+
+        clickme.addEventListener('click', function(){
+            mytext.textContent = 'Welcome to Gilan';
+        });
+
+        prizren.addEventListener('click', function(){
+            mytext.textContent = 'Welcome to Prizren';
+        });
+
+    </script>
+</body>
+</html>
