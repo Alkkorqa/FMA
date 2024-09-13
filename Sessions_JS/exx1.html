@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <h3 id="fName">First Name: </h3>
+    <h3 id="lName" >Last Name: </h3>
+    <h3 id="address" >Address: </h3>
+    <h3 id="phone" >Phone: </h3>
+
+    <script>
+        const fName = document.querySelector('#fName');
+        const lName = document.querySelector('#lName');
+        const address = document.querySelector('#address');
+        const phone = document.querySelector('#phone');
+
+        let personInfo = ['Alk', 'Korqa', 'Gavran 2', '049955789'];
+
+        fName.innerHTML = 'First Name: ' +personInfo[0];
+        lName.innerHTML = 'Last Name: ' +personInfo[1];
+        address.innerHTML = 'Address: ' +personInfo[2];
+        phone.innerHTML = 'Phone: ' +personInfo[3];
+
+    </script>
+</body>
+</html>

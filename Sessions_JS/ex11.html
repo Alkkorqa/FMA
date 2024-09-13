@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <ul>
+                <li id="userManagement"><a href="#user-management">User Management</a></li>
+                <li id="learningPlan"><a href="#learning-plan">Learning Plan</a></li>
+                <li id="reportss"><a href="#reports">Reports</a></li>
+                <li id="discussionss"><a href="#discussions">Discussions</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <section id="user-management" class="hide">
+                <h2>User Management</h2>
+                <p>Content for User Management goes here...</p>
+            </section>
+            <section id="learning-plan" class="hide">
+                <h2>Learning Plan</h2>
+                <p>Content for Learning Plan goes here...</p>
+            </section>
+            <section id="reports" class="hide">
+                <h2>Reports</h2>
+                <p>Content for Reports goes here...</p>
+            </section>
+            <section id="discussions" class="hide">
+                <h2>Discussions</h2>
+                <p>Content for Discussions goes here...</p>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function showHide() {
+            const usermanagement = document.querySelector('#userManagement');
+            const learningplan = document.querySelector('#learningPlan');
+            const reports = document.querySelector('#reportss');
+            const discussions = document.querySelector('#discussionss');
+            const userManag = document.querySelector('#user-management');
+            const learningPlan = document.querySelector('#learning-plan');
+            const report = document.querySelector('#reports');
+            const discuss = document.querySelector('#discussions');
+
+            if (
+                usermanagement.addEventListener('click', function () {
+                    userManag.classList.add('show');
+                })
+            );
+
+            else(
+                usermanagement.addEventListener('click', function () {
+                    learningPlan.classList.add('');
+                })
+            )
+        }
+
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>

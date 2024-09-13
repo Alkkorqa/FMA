@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>AC</title>
+    <style>
+        .wrapper {
+            width: fit-content;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .wrapper select {
+            width: 200px;
+            padding: 20px;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 id="setTemp">Off</h1>
+
+        <select name="" id="changeTemp">
+            <option value=""></option>
+        </select>
+    </div>
+
+    <script>
+        const changeTemp = document.querySelector('#changeTemp');
+        const setTemp = document.querySelector('#setTemp');
+
+
+        for (let i = 0; i <= 30; i++) {
+            if (i == 0) {
+                changeTemp.innerHTML += `<option value="off">Off</option>`;
+            }
+
+            else {
+                changeTemp.innerHTML += `<option value="${i}">${i}</option>`;
+            }
+
+            else if (i > 25){
+                
+            }
+
+        }
+
+
+        changeTemp.addEventListener('change', function (e) {
+            setTemp.textContent = e.target.value + ' grad';
+        });
+    </script>
+</body>
+
+</html>
