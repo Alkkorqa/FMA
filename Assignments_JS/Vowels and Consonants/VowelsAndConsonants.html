@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels and Consonants</title>
+</head>
+<body>
+
+    <h1>Keypress Detector</h1>
+    <p>Press any key on the keyboard and check the console to see if it's a vowel, consonant, number, or symbol!</p>
+
+    <script>
+        function detectCharacterType(letter) {
+            const vowels = ['a', 'e', 'i', 'o', 'u'];
+            const numbers = '0123456789';
+            
+            if (letter.length !== 1) {
+                console.log("Please enter only a single character.");
+                return;
+            }
+
+            // Check if it's a vowel (lowercase or uppercase)
+            if (vowels.includes(letter.toLowerCase())) {
+                console.log(`${letter} is a vowel.`);
+            }
+            // Check if it's a number
+            else if (numbers.includes(letter)) {
+                console.log(`${letter} is a number.`);
+            }
+            // Check if it's a consonant (only for alphabetic characters)
+            else if (letter.toLowerCase() >= 'a' && letter.toLowerCase() <= 'z') {
+                console.log(`${letter} is a consonant.`);
+            }
+            // Otherwise, it's another symbol
+            else {
+                console.log(`${letter} is a symbol.`);
+            }
+        }
+
+        // Event listener for detecting keypress
+        document.addEventListener('keypress', (e) => {
+            let letter = e.key;
+            detectCharacterType(letter);
+        });
+    </script>
+</body>
+</html>
